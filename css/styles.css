@@ -1,0 +1,14 @@
+body {
+  background-color: #27282e;
+  color: #fff;
+}
+
+header,
+footer {
+  background-color: #672a6b;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
