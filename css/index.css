@@ -1,0 +1,89 @@
+.higlighted h1 {
+  background-color: #672a6b;
+  text-align: left;
+  padding: 13px 13px 13px 5px;
+}
+
+.highlighted-game {
+  background-color: #672a6b;
+}
+
+.highlighted-game img {
+  object-fit: cover;
+  max-width: 1144px;
+  max-height: 460px;
+}
+
+.highlighted-game h2 {
+  background-color: #672a6b;
+  color: #fff;
+  margin-left: 28px;
+}
+
+.highlighted-game p {
+  background-color: #672a6b;
+  color: #fff;
+  text-align: right;
+  margin-right: 39px;
+}
+
+.categories {
+  background-color: #672a6b;
+}
+
+.categories ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+}
+
+.categories li {
+  display: inline-block;
+  padding: 25px;
+}
+
+.featured-new {
+  background-color: #672a6b;
+}
+
+.featured-new h2 {
+  padding: 3px 10px;
+}
+
+.featured-popular {
+  background-color: #672a6b;
+}
+
+.featured-popular h2 {
+  padding: 3px 10px;
+}
+
+.product-list {
+  display: grid;
+}
+
+.product-list img {
+  width: 220px;
+  height: 220px;
+}
+
+.products {
+  background-color: #672a6b;
+  display: grid;
+}
+
+.bestsellers {
+  background-color: #672a6b;
+}
+
+.bestsellers-list {
+  background-color: #672a6b;
+}
+
+.most-wishlisted {
+  background-color: #672a6b;
+}
+
+.most-wishlisted-list {
+  background-color: #672a6b;
+}

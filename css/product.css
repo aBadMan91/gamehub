@@ -1,0 +1,76 @@
+.main-game_picture {
+  padding-top: 50px;
+}
+
+.game-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 460px;
+  max-height: 75px;
+  margin: auto;
+}
+
+.game-name {
+  background-color: #672a6b;
+  text-align: center;
+  padding: 26px;
+}
+
+.game-description {
+  background-color: #672a6b;
+  border-color: #bac5cf;
+}
+
+.game-info {
+  background-color: #672a6b;
+  text-align: center;
+  gap: 25px;
+}
+
+.add-cart {
+  background-color: #672a6b;
+}
+
+.add-wishlist {
+  background-color: #672a6b;
+}
+
+.game_system-req {
+  background-color: #672a6b;
+}
+
+.game_system-req h2 {
+  text-align: center;
+}
+
+.game_system-req table,
+.game_system-req th,
+.game_system-req td {
+  border: 1px solid;
+}
+
+.game_system-req table {
+  width: 100%;
+  margin: auto;
+  border-spacing: 0;
+}
+
+.game_system-req tbody {
+  white-space: nowrap;
+}
+
+.game_system-req th,
+.game_system-req td {
+  padding: 5px 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.game_system-req th {
+  position: sticky;
+  top: 0;
+  vertical-align: bottom;
+}

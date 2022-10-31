@@ -1,3 +1,5 @@
+@import "imports/links.css";
+
 body {
   font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
@@ -6,6 +8,14 @@ body {
   grid-template-columns: auto;
   background-color: #27282e;
   color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 header,
@@ -22,10 +32,12 @@ header {
 
 header a {
   color: #fff;
+  padding: 25px;
 }
 
 nav {
   display: block;
+  position: static;
 }
 
 nav li {
@@ -35,79 +47,9 @@ nav li {
 
 footer {
   text-align: center;
+  position: static;
 }
 
-/* Home Page */
-.higlighted h1 {
-  background-color: #672a6b;
-  text-align: left;
-  padding: 13px 13px 13px 5px;
+img {
+  width: 100%;
 }
-
-.highlighted-game {
-  background-color: #672a6b;
-}
-
-.categories {
-  background-color: #672a6b;
-  padding: 13px;
-}
-
-.featured-new {
-  background-color: #672a6b;
-}
-
-.featured-popular {
-  background-color: #672a6b;
-}
-
-.bestsellers {
-  background-color: #672a6b;
-}
-
-.bestsellers-list {
-  background-color: #672a6b;
-}
-
-.most-wishlisted {
-  background-color: #672a6b;
-}
-
-.most-wishlisted-list {
-  background-color: #672a6b;
-}
-
-/* About */
-.about-us h1 {
-  background-color: #672a6b;
-  text-align: center;
-  padding: 13px;
-}
-
-.location-description {
-  background-color: #672a6b;
-  padding: 5px 20px;
-}
-
-/* Contact */
-.contact-us h1 {
-  background-color: #672a6b;
-  text-align: center;
-  padding: 13px;
-}
-
-/* Wishlist */
-.wishlist h1,
-.wishlist h3 {
-  background-color: #672a6b;
-  text-align: center;
-  padding: 13px;
-}
-
-.your-wishlist {
-  background-color: #672a6b;
-  text-align: center;
-  padding: 13px;
-}
-
-/* Product Page */

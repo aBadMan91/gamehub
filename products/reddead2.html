@@ -13,12 +13,12 @@
       rel="stylesheet"
     />
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a href="../index.html"
-        ><img src="../images/GameHubLogo.png" alt="GameHub Logo"
-      /></a>
+      <a href="../index.html"><img src="../images/GameHubLogo.png" alt="GameHub Logo"/>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -27,24 +27,26 @@
         </ul>
       </nav>
     </header>
-    <main class="game-specific">
-      <section>
+    <main class="container">
+      <section class="main-game_picture">
         <img src="../images/RedDead2_1.jpg" alt="Red Dead Redemption 2" />
-        <div class="game-imange_thumbnails">
+        <div class="game-image_thumbnails">
           <div>
-            <img src="#" alt="Red Dead Redemption 2" />
+            <img src="../images/RedDead2_2.jpg" alt="Red Dead Redemption 2" />
           </div>
           <div>
-            <img src="#" alt="Red Dead Redemption 2" />
+            <img src="../images/RedDead2_3.jpg" alt="Red Dead Redemption 2" />
           </div>
           <div>
-            <img src="#" alt="Red Dead Redemption 2" />
+            <img src="../images/RedDead2_4.jpg" alt="Red Dead Redemption 2" />
           </div>
         </div>
       </section>
-      <section class="game-specific__description">
+      <section>
+        <div class="game-name">
         <h1>Red Dead Redemption 2</h1>
-        <div>
+      </div>
+        <div class="game-description">
           <p>
             America, 1899. The end of the Wild West era has begun. After a
             robbery goes badly wrong in the western town of Blackwater, Arthur
@@ -90,51 +92,75 @@
           </p>
         </div>
       </section>
-      <section class="game-specific__info">
-        <p>Genre: Action, Adventure</p>
-        <p>Developer: Rockstar Games</p>
-        <p>Publisher: Rockstar Games</p>
-        <p>Release Date: 05.11.2019</p>
-        <p>Platform: PC</p>
-        <p>Age Rating 18+</p>
+      <section class="game-info">
+        <table>
+          <tbody>
+            <tr>
+              <td>Genre: Action, Adventure</td>
+            </tr>
+            <tr>
+              <td>Developer: Rockstar Games</td>
+            </tr>
+            <tr>
+              <td>Publisher: Rockstar Games</td>
+            </tr>
+            <tr>
+              <td>Release Date: 05.11.2019</td>
+            </tr>
+            <tr>
+              <td>Platform: PC</td>
+            </tr>
+            <tr>
+              <td>Age Rating 18+</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section>
-        <p class="game-specific__price">599 NOK</p>
+        <p class="game-price">599 NOK</p>
         <a href="../checkout/checkout.html" class="cta cta-large">BUY NOW</a>
-        <p>Add to cart</p>
-        <p>Wishlist</p>
+        <p class="add-cart">Add to cart</p>
+        <p class="add-wishlist">Wishlist</p>
       </section>
-      <section class="game-specific__system-req">
+      <section class="game_system-req">
         <h2>System Requirements</h2>
-        <div>
-          <p>Minimum:</p>
-          <p>Requires a 64-bit processor and operating system</p>
-          <p>OS: Windows 10 - April 2018 Update (v1803)</p>
-          <p>Processor: Intel® Core™ i5-2500K / AMD FX-6300</p>
-          <p>Memory: 8 GB RAM</p>
-          <p>Graphics: Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB</p>
-          <p>Network: Broadband Internet connection</p>
-          <p>Storage: 150 GB available space</p>
-          <p>Sound Card: Direct X Compatible</p>
-        </div>
-        <div>
-          <p>Recommended:</p>
-          <p>Requires a 64-bit processor and operating system</p>
-          <p>OS: Windows 10 - April 2018 Update (v1803)</p>
-          <p>Processor: Intel® Core™ i7-4770K / AMD Ryzen 5 1500X</p>
-          <p>Memory: 12 GB RAM</p>
-          <p>Graphics: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB</p>
-          <p>Network: Broadband Internet connection</p>
-          <p>Storage: 150 GB available space</p>
-          <p>Sound Card: Direct X Compatible</p>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Minimum:</th>
+              <th>Recommended:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Requires a 64-bit processor and operating system</p>
+                <p>OS: Windows 10 - April 2018 Update (v1803)</p>
+                <p>Processor: Intel® Core™ i5-2500K / AMD FX-6300</p>
+                <p>Memory: 8 GB RAM</p>
+                <p>Graphics: Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB</p>
+                <p>Network: Broadband Internet connection</p>
+                <p>Storage: 150 GB available space</p>
+                <p>Sound Card: Direct X Compatible</p>
+              </td>
+              <td>
+                <p>Requires a 64-bit processor and operating system</p>
+                <p>OS: Windows 10 - April 2018 Update (v1803)</p>
+                <p>Processor: Intel® Core™ i7-4770K / AMD Ryzen 5 1500X</p>
+                <p>Memory: 12 GB RAM</p>
+                <p>Graphics: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB</p>
+                <p>Network: Broadband Internet connection</p>
+                <p>Storage: 150 GB available space</p>
+                <p>Sound Card: Direct X Compatible</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div>
           <p>Supported Languages:</p>
-          <p>
-            Simplified Chinese, Traditional Chinese, English, French, German,
+          <p>Simplified Chinese, Traditional Chinese, English, French, German,
             Italian, Japanese, Korean, Polish, Portuguese, Portuguese-Brazil,
-            Russian, Spanish-Spain, Spanish-Latin America
-          </p>
+            Russian, Spanish-Spain, Spanish-Latin America</p>
         </div>
       </section>
       <section>
