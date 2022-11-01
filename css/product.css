@@ -13,21 +13,33 @@
   margin: auto;
 }
 
-.game-name {
+.game-specific_details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.game-specific_name {
   background-color: #672a6b;
   text-align: center;
   padding: 26px;
 }
 
-.game-description {
+.game-specific_description {
   background-color: #672a6b;
   border-color: #bac5cf;
+  max-width: 745px;
+  max-height: 771px;
+  margin: 25px 25px 50px 0px;
+  padding: 10px;
 }
 
-.game-info {
+.game-specific_info {
   background-color: #672a6b;
   text-align: center;
-  gap: 25px;
+  border-top: #bac5cf solid 1px;
+  max-width: 374px;
+  max-height: 319px;
 }
 
 .add-cart {
