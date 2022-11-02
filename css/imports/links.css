@@ -1,7 +1,31 @@
-.cta {
-}
-
-.cta-large {
+.cta-buy {
   background-color: #4e8010;
   color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+
+.products {
+  background-color: #672a6b;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.products img {
+  grid-column: -1/1;
+}
+
+.products h2,
+.products h3 {
+  grid-column: 1;
+  margin: 5px;
+  text-align: left;
+}
+
+.products p {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
 }

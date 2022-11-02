@@ -1,10 +1,26 @@
-.about-us h1 {
+.about-us {
   background-color: #672a6b;
   text-align: center;
   padding: 13px;
 }
 
+.location-description_map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 84px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 130px;
+}
+
 .location-description {
   background-color: #672a6b;
   padding: 5px 20px;
+  max-width: 530px;
+  max-height: 400px;
+}
+
+.location-map {
+  max-width: 530px;
+  max-height: 400px;
 }
