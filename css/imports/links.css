@@ -1,3 +1,20 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-nav {
+  background-color: #672a6b;
+}
+
+.header-nav_row {
+  display: flex;
+}
+
+.logo-list-searchbar {
+  display: flex;
+}
+
 .cta-buy {
   background-color: #4e8010;
   color: #fff;
@@ -9,7 +26,9 @@
   background-color: #672a6b;
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: center;
+  grid-template-areas:
+    "image image"
+    "name price";
   font-size: 0.8em;
 }
 
@@ -21,11 +40,10 @@
 .products h3 {
   grid-column: 1;
   margin: 5px;
-  text-align: left;
 }
 
 .products p {
   grid-column: 2;
   grid-row: 2;
-  text-align: right;
+  margin: 5px;
 }

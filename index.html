@@ -17,42 +17,59 @@
     <link href="css/media.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo"
-        ><img src="images/GameHubLogo.svg" alt="GameHub Logo"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header-nav">
+      <section class="header-nav_row">
+        <div class="logo-list-search">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/GameHubLogo.svg" alt="GameHub Logo"
+            /></a>
+          </div>
+          <nav class="navigation">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="searchbar">
+            <div class="search-input">
+              <input
+                type="search"
+                id="games"
+                name="games"
+                placeholder="Search"
+              />
+              <datalist id="games">
+                <option value="Red Dead Redemption 2"></option>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main class="container">
       <section class="higlighted">
         <h1>Highlighted Game</h1>
-        <div class="highlighted-game">
-          <a href="products/reddead2.html">
-            <img src="images/RedDead2_2.jpg" alt="Red Dead Redemption 2" />
-            <h2>Red Dead Redemption 2</h2>
-            <p>599NOK</p>
-          </a>
-        </div>
       </section>
-      <section>
-        <div class="categories">
-          <ul>
-            <li>Action</li>
-            <li>Adventure</li>
-            <li>Indie</li>
-            <li>RPG</li>
-            <li>Shooters</li>
-            <li>Simulation</li>
-            <li>Sports/Racing</li>
-            <li>Strategy</li>
-          </ul>
-        </div>
+      <section class="highlighted-game">
+        <a href="products/reddead2.html">
+          <img src="images/RedDead2_2.jpg" alt="Red Dead Redemption 2" />
+          <h2>Red Dead Redemption 2</h2>
+          <p>599NOK</p>
+        </a>
+      </section>
+      <section class="categories">
+        <ul>
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Indie</li>
+          <li>RPG</li>
+          <li>Shooters</li>
+          <li>Simulation</li>
+          <li>Sports/Racing</li>
+          <li>Strategy</li>
+        </ul>
       </section>
       <section class="featured-new">
         <h2>New Releases</h2>
@@ -63,7 +80,7 @@
             src="/images/TotalWarWarhammer3.jpg"
             alt="Total War: Warhammer 3"
           />
-          <h3>Total War: WARHAMMER III</h3>
+          <h3>Total War: WH III</h3>
           <p>599 NOK</p>
         </div>
         <div class="products">
@@ -88,7 +105,7 @@
       <section class="product-list">
         <div class="products">
           <img src="/images/Bannerlord.jpg" alt="Mount & Blade 2: Bannerlord" />
-          <h3>Mount & Blade II: Bannerlord</h3>
+          <h3>M&B II: Bannerlord</h3>
           <p>499 NOK</p>
         </div>
         <div class="products">
@@ -118,23 +135,23 @@
             <tbody>
               <tr>
                 <td>1. Elden Ring</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>2. Red Dead Redemption 2</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>3. The Elder Scrolls V: Skyrim AE</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>4. Total War: WARHAMMER III</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>5. Call of Duty: Modern Warfare II</td>
-                <td>849 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
             </tbody>
           </table>
@@ -149,23 +166,23 @@
             <tbody>
               <tr>
                 <td>1. Starfield</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>2. Call of Duty: Modern Warfare II</td>
-                <td>849 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>3. S.T.A.L.K.E.R 2: Heart of Chornobyl</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>4. Mount & Blade II: Bannerlord</td>
-                <td>499 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
               <tr>
                 <td>5. Marvel's Spider-Man Remastered</td>
-                <td>599 NOK</td>
+                <td><p>599 NOK</p></td>
               </tr>
             </tbody>
           </table>
