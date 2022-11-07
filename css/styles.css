@@ -17,28 +17,39 @@ body {
   color: #fff;
 }
 
+.container {
+  margin: auto;
+}
+
 .header-nav {
   background-color: #672a6b;
 }
 
 .header-nav_row {
+  margin: auto;
   display: flex;
+  flex-direction: column;
 }
 
-.logo-list-search {
+.header-nav-row_div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-list-search {
   width: 100%;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   display: flex;
 }
 
-.navigation {
-  display: flex;
+.logo img {
+  width: 104px;
 }
 
 .searchbar {
@@ -67,6 +78,7 @@ main {
 
 footer {
   grid-area: footer;
+  display: block;
   text-align: center;
   position: static;
 }
@@ -75,7 +87,7 @@ header,
 footer {
   background: #672a6b;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
 }
 
 .active {
@@ -83,15 +95,360 @@ footer {
 }
 
 nav {
-  display: block;
-  position: static;
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50px;
+}
+
+nav ul {
+  padding: 0px;
 }
 
 nav li {
   display: inline-block;
-  padding: 0px;
+  padding: 25px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 img {
   width: 100%;
+}
+
+/* Index */
+.higlighted h1 {
+  background-color: #672a6b;
+  text-align: left;
+  padding: 13px 13px 13px 5px;
+}
+
+.highlighted-game {
+  background-color: #672a6b;
+}
+
+.highlighted-game h2,
+.highlighted-game p {
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.highlighted-game img {
+  object-fit: cover;
+  max-width: 1144px;
+  max-height: 460px;
+}
+
+.categories {
+  background-color: #672a6b;
+}
+
+.categories ul {
+  list-style: none;
+  text-align: center;
+}
+
+.categories li {
+  display: inline-block;
+  padding: 25px;
+}
+
+.featured-new {
+  background-color: #672a6b;
+}
+
+.featured-new h2 {
+  padding: 3px 10px;
+}
+
+.featured-popular {
+  background-color: #672a6b;
+}
+
+.featured-popular h2 {
+  padding: 3px 10px;
+}
+
+.product-list {
+  display: grid;
+}
+
+.product-list h3,
+.product-list p {
+  display: inline;
+  vertical-align: text-top;
+}
+
+.bestseller-wishlist_list {
+  padding-top: 50px;
+}
+
+.bestsellers {
+  background-color: #672a6b;
+  text-align: left;
+  width: 360px;
+  object-fit: cover;
+}
+
+.wishlist {
+  background-color: #672a6b;
+  text-align: left;
+  width: 360px;
+  object-fit: cover;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+tbody {
+  border: 1px solid;
+}
+
+tbody p {
+  text-align: left;
+  padding-right: 10px;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding-left: 10px;
+}
+
+/* About */
+.about-us {
+  background-color: #672a6b;
+  text-align: center;
+  padding: 13px;
+}
+
+.location-description_map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 84px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 130px;
+}
+
+.location-description {
+  background-color: #672a6b;
+  padding: 5px 20px;
+  max-width: 530px;
+  max-height: 400px;
+}
+
+.location-map {
+  max-width: 530px;
+  max-height: 400px;
+}
+
+/* Contact */
+.contact-us {
+  background-color: #672a6b;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 13px;
+  width: 1144px;
+}
+
+.contact-details {
+  background-color: #672a6b;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 572px;
+  height: 449px;
+  margin: 50px auto;
+}
+
+.contact-details h4 {
+  border-bottom: 1px solid;
+}
+
+/* Product page */
+.main-game_picture {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.game-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 460px;
+  max-height: 75px;
+  margin: auto;
+}
+
+.game-specific_name {
+  background-color: #672a6b;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -50px;
+}
+
+.game-specific_name h1 {
+  padding: 26px;
+}
+
+.game-specific_details {
+  display: table;
+}
+
+.game-specific_details a {
+  width: 354px;
+  display: block;
+  padding: 38px;
+}
+
+.game-specific_description {
+  display: block;
+  background-color: #672a6b;
+  border-color: #bac5cf;
+  margin-top: 25px;
+  padding: 10px;
+  grid-column: 1;
+  font-size: 20px;
+  font-family: "Lato Light";
+}
+
+.buy-info {
+  display: table-caption;
+  fl
+}
+
+.game-specific_info {
+  background-color: #672a6b;
+  text-align: center;
+  border-top: #bac5cf solid 1px;
+  font-size: 20px;
+  font-family: "Lato Light";
+  padding: 5px;
+}
+
+.game-price {
+  text-align: center;
+  font-size: 40px;
+  margin: 25px 0px;
+  border: #bac5cf solid 1px;
+}
+
+.add-cart {
+  background-color: #672a6b;
+  text-align: center;
+}
+
+.add-wishlist {
+  background-color: #672a6b;
+  text-align: center;
+}
+
+.game_system-req {
+  background-color: #672a6b;
+}
+
+.game_system-req h2 {
+  text-align: center;
+}
+
+.game_system-req table,
+.game_system-req th,
+.game_system-req td {
+  border: 1px solid;
+}
+
+.game_system-req table {
+  width: 100%;
+  margin: auto;
+  border-spacing: 0;
+}
+
+.game_system-req tbody {
+  white-space: nowrap;
+}
+
+.game_system-req th,
+.game_system-req td {
+  padding: 5px 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.game_system-req th {
+  position: sticky;
+  top: 0;
+  vertical-align: bottom;
+}
+
+/* Checkout */
+
+/* Checkout Success */
+
+/* Wishlist */
+.wishlist h1,
+.wishlist h3 {
+  background-color: #672a6b;
+  text-align: center;
+  padding: 13px;
+}
+
+.your-wishlist {
+  background-color: #672a6b;
+  text-align: center;
+  padding: 13px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cta-buy {
+  background-color: #4e8010;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+
+.products {
+  background-color: #672a6b;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "image image"
+    "name price";
+  font-size: 0.8em;
+}
+
+.products img {
+  grid-column: -1/1;
+}
+
+.products h2,
+.products h3 {
+  grid-column: 1;
+  margin: 5px;
+}
+
+.products p {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 5px;
 }

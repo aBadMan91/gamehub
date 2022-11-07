@@ -13,36 +13,43 @@
       rel="stylesheet"
     />
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b318972c4d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header-nav">
       <section class="header-nav_row">
-        <div class="logo-list-search">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="images/GameHubLogo.svg" alt="GameHub Logo"
-            /></a>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="searchbar">
-            <div class="search-input">
-              <input
-                type="search"
-                id="games"
-                name="games"
-                placeholder="Search"
-              />
-              <datalist id="games">
-                <option value="Red Dead Redemption 2"></option>
-              </datalist>
+        <div class="header-nav-row_div">
+          <div class="logo-list-search">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="images/GameHubLogo.svg" alt="GameHub Logo"
+              /></a>
+            </div>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav>
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="searchbar">
+              <div class="search-input">
+                <input
+                  type="search"
+                  id="games"
+                  name="games"
+                  placeholder="Search"
+                />
+                <datalist id="games">
+                  <option value="Red Dead Redemption 2"></option>
+                </datalist>
+              </div>
             </div>
           </div>
         </div>

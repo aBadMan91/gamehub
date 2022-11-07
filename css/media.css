@@ -1,11 +1,7 @@
 @media (min-width: 360px) {
-  .container {
-    max-width: 360px;
-  }
-
   .product-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 10px;
   }
 }
@@ -13,7 +9,29 @@
 @media (min-width: 600px) {
   .container {
     max-width: 600px;
-    margin: auto;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .header-nav-row_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-list-search {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: block;
+    position: static;
   }
 
   .highlighted-game {
@@ -55,7 +73,39 @@
 @media (min-width: 800px) {
   .container {
     max-width: 800px;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .header-nav_row {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-nav-row_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-list-search {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 208px;
+  }
+
+  nav {
+    display: block;
+    position: static;
   }
 
   .product-list {
@@ -81,6 +131,31 @@
     margin: auto;
   }
 
+  .header-nav_row {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-nav-row_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-list-search {
+    max-width: 1144px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
   .product-list {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -100,5 +175,60 @@
   .wishlist {
     width: 572px;
     float: right;
+  }
+
+  .game-specific_details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 25px;
+  }
+
+  .game-specific_details a {
+    width: 354px;
+    display: block;
+    padding: 38px;
+  }
+
+  .game-specific_description {
+    display: block;
+    background-color: #672a6b;
+    border-color: #bac5cf;
+    margin-top: 25px;
+    padding: 10px;
+    grid-column: 1;
+    font-size: 20px;
+    font-family: "Lato Light";
+  }
+
+  .buy-info {
+    display: block;
+    grid-column: 2;
+  }
+
+  .game-specific_info {
+    background-color: #672a6b;
+    text-align: center;
+    border-top: #bac5cf solid 1px;
+    font-size: 20px;
+    font-family: "Lato Light";
+    padding: 5px;
+  }
+
+  .game-price {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0px;
+    border: #bac5cf solid 1px;
+  }
+
+  .add-cart {
+    background-color: #672a6b;
+    text-align: center;
+  }
+
+  .add-wishlist {
+    background-color: #672a6b;
+    text-align: center;
   }
 }
