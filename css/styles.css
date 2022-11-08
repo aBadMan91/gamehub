@@ -18,6 +18,7 @@ body {
 }
 
 .container {
+  max-width: 360px;
   margin: auto;
 }
 
@@ -124,10 +125,10 @@ img {
 }
 
 /* Index */
-.higlighted h1 {
+.highlighted h1 {
   background-color: #672a6b;
   text-align: left;
-  padding: 13px 13px 13px 5px;
+  padding: 13px 5px;
 }
 
 .highlighted-game {
@@ -161,19 +162,21 @@ img {
 }
 
 .featured-new {
-  background-color: #672a6b;
+  background-color: #27282e;
 }
 
 .featured-new h2 {
   padding: 3px 10px;
+  background-color: #672a6b;
 }
 
 .featured-popular {
-  background-color: #672a6b;
+  background-color: #27282e;
 }
 
 .featured-popular h2 {
   padding: 3px 10px;
+  background-color: #672a6b;
 }
 
 .product-list {
@@ -216,7 +219,7 @@ tbody {
 
 tbody p {
   text-align: left;
-  padding-right: 10px;
+  padding-right: 0.1em;
 }
 
 th {
@@ -228,93 +231,90 @@ td {
 }
 
 /* About */
-.about-us {
+.about-us h1 {
   background-color: #672a6b;
   text-align: center;
   padding: 13px;
 }
 
 .location-description_map {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 84px;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
 .location-description {
+  flex: 1;
   background-color: #672a6b;
-  padding: 5px 20px;
-  max-width: 530px;
-  max-height: 400px;
+  font-size: 1em;
+  padding: 5px;
 }
 
 .location-map {
-  max-width: 530px;
-  max-height: 400px;
+  flex: 1;
+  object-fit: cover;
 }
 
 /* Contact */
 .contact-us {
+  width: 360px;
+  margin: auto;
+}
+
+.contact-us h1 {
   background-color: #672a6b;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   padding: 13px;
-  width: 1144px;
 }
 
 .contact-details {
   background-color: #672a6b;
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-align: center;
-  width: 572px;
-  height: 449px;
-  margin: 50px auto;
+  width: 340px;
+  padding: 5px;
+  margin: auto;
 }
 
-.contact-details h4 {
-  border-bottom: 1px solid;
+.contact-details h3 {
+  border-bottom: #bac5cf 1px solid;
+  padding: 5px;
+}
+
+.contact-centered {
+  display: flex;
 }
 
 /* Product page */
 .main-game_picture {
-  margin: auto;
-  padding-top: 50px;
+  padding-top: 25px;
+  object-fit: cover;
+  max-width: 1144px;
 }
 
 .game-image_thumbnails {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px;
   max-width: 460px;
-  max-height: 75px;
   margin: auto;
 }
 
 .game-specific_name {
   background-color: #672a6b;
   text-align: center;
-  font-size: 40px;
+  font-size: 1.5em;
   margin-bottom: -50px;
 }
 
 .game-specific_name h1 {
-  padding: 26px;
+  padding: 0.4em;
 }
 
 .game-specific_details {
-  display: table;
-}
-
-.game-specific_details a {
-  width: 354px;
-  display: block;
-  padding: 38px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .game-specific_description {
@@ -324,39 +324,64 @@ td {
   margin-top: 25px;
   padding: 10px;
   grid-column: 1;
-  font-size: 20px;
+  font-size: 1.2em;
   font-family: "Lato Light";
 }
 
 .buy-info {
-  display: table-caption;
-  fl
+  display: flex;
+  flex-direction: column;
 }
 
 .game-specific_info {
+  display: flex;
   background-color: #672a6b;
   text-align: center;
   border-top: #bac5cf solid 1px;
-  font-size: 20px;
+  font-size: 0.8em;
   font-family: "Lato Light";
-  padding: 5px;
+  padding: 0.5em;
 }
 
 .game-price {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 40px;
+  font-size: 1.5em;
   margin: 25px 0px;
   border: #bac5cf solid 1px;
 }
 
+.buy-cart-wish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.buy-now {
+  flex: 1;
+  background-color: #4e8010;
+  text-align: center;
+  border: #bac5cf solid 1px;
+  font-size: 1.4em;
+}
+
 .add-cart {
+  flex: 1;
   background-color: #672a6b;
   text-align: center;
+  border: #bac5cf solid 1px;
+  font-size: 1.4em;
 }
 
 .add-wishlist {
+  flex: 1;
   background-color: #672a6b;
   text-align: center;
+  border: #bac5cf solid 1px;
+  font-size: 1.4em;
 }
 
 .game_system-req {
@@ -365,35 +390,40 @@ td {
 
 .game_system-req h2 {
   text-align: center;
-}
-
-.game_system-req table,
-.game_system-req th,
-.game_system-req td {
-  border: 1px solid;
+  padding: 0.4em;
 }
 
 .game_system-req table {
-  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
   margin: auto;
-  border-spacing: 0;
+  width: 100%;
+  font-family: "Lato Light";
 }
 
 .game_system-req tbody {
-  white-space: nowrap;
+  border: 1px solid;
+}
+
+.game_system-req tbody p {
+  text-align: left;
+  padding-right: 0.4em;
 }
 
 .game_system-req th,
 .game_system-req td {
-  padding: 5px 10px;
-  border-top-width: 0;
-  border-left-width: 0;
+  padding: 0.4em;
+  border: #bac5cf solid 1px;
 }
 
-.game_system-req th {
-  position: sticky;
-  top: 0;
-  vertical-align: bottom;
+.supported-languages p {
+  font-family: "Lato Light";
+  padding: 0.4em;
+}
+
+.extra-info {
+  font-family: "Lato Light";
+  font-size: 0.7em;
 }
 
 /* Checkout */
@@ -420,13 +450,6 @@ a {
   color: #fff;
 }
 
-.cta-buy {
-  background-color: #4e8010;
-  color: #fff;
-  text-align: center;
-  font-size: 40px;
-}
-
 .products {
   background-color: #672a6b;
   display: grid;
@@ -445,10 +468,12 @@ a {
 .products h3 {
   grid-column: 1;
   margin: 5px;
+  float: left;
 }
 
 .products p {
   grid-column: 2;
   grid-row: 2;
   margin: 5px;
+  float: right;
 }

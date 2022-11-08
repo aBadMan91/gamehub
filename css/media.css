@@ -1,7 +1,7 @@
 @media (min-width: 360px) {
   .product-list {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 }
@@ -66,169 +66,219 @@
 
   .wishlist {
     width: 300px;
-    float: right;
-  }
-}
-
-@media (min-width: 800px) {
-  .container {
-    max-width: 800px;
   }
 
-  header label {
-    display: none;
-  }
-
-  .header-nav_row {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header-nav-row_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo-list-search {
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo img {
-    width: 208px;
-  }
-
-  nav {
-    display: block;
-    position: static;
-  }
-
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 60px;
-  }
-
-  .bestsellers {
-    width: 400px;
-    float: left;
-  }
-
-  .wishlist {
-    width: 400px;
-    float: right;
-  }
-}
-
-@media (min-width: 1144px) {
-  .container {
-    max-width: 1144px;
-    margin: auto;
-  }
-
-  .header-nav_row {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header-nav-row_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo-list-search {
-    max-width: 1144px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav {
-    display: block;
-    position: static;
-  }
-
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 88px;
-  }
-
-  .product-list img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .bestsellers {
-    width: 572px;
-    float: left;
-  }
-
-  .wishlist {
-    width: 572px;
-    float: right;
-  }
-
-  .game-specific_details {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    grid-gap: 25px;
-  }
-
-  .game-specific_details a {
-    width: 354px;
-    display: block;
-    padding: 38px;
-  }
-
-  .game-specific_description {
-    display: block;
-    background-color: #672a6b;
-    border-color: #bac5cf;
-    margin-top: 25px;
-    padding: 10px;
-    grid-column: 1;
-    font-size: 20px;
-    font-family: "Lato Light";
-  }
-
-  .buy-info {
-    display: block;
-    grid-column: 2;
+  .game-specific_name {
+    font-size: 2.5em;
+    margin-bottom: -50px;
   }
 
   .game-specific_info {
-    background-color: #672a6b;
-    text-align: center;
-    border-top: #bac5cf solid 1px;
-    font-size: 20px;
-    font-family: "Lato Light";
-    padding: 5px;
+    font-size: 1.2em;
   }
 
   .game-price {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 25px 0px;
     border: #bac5cf solid 1px;
   }
 
-  .add-cart {
-    background-color: #672a6b;
-    text-align: center;
+  .contact-us {
+    width: 600px;
   }
 
-  .add-wishlist {
-    background-color: #672a6b;
-    text-align: center;
+  .contact-details {
+    width: 572px;
+  }
+
+  @media (min-width: 800px) {
+    .container {
+      max-width: 800px;
+    }
+
+    header label {
+      display: none;
+    }
+
+    .header-nav_row {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-nav-row_div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-list-search {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 208px;
+    }
+
+    nav {
+      display: block;
+      position: static;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 60px;
+    }
+
+    .bestsellers {
+      width: 400px;
+      float: left;
+    }
+
+    .wishlist {
+      width: 400px;
+      float: right;
+    }
+
+    .contact-us {
+      width: 800px;
+    }
+  }
+
+  @media (min-width: 1144px) {
+    .container {
+      max-width: 1144px;
+      margin: auto;
+    }
+
+    .header-nav_row {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-nav-row_div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-list-search {
+      max-width: 1144px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: block;
+      position: static;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 88px;
+    }
+
+    .product-list img {
+      width: 220px;
+      height: 220px;
+    }
+
+    .bestsellers {
+      width: 572px;
+      float: left;
+    }
+
+    .wishlist {
+      width: 572px;
+      float: right;
+    }
+
+    .game-specific_details {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr auto;
+      grid-gap: 25px;
+    }
+
+    .game-specific_details a {
+      width: 374px;
+      display: block;
+      padding: 38px;
+    }
+
+    .game-specific_description {
+      display: block;
+      background-color: #672a6b;
+      border-color: #bac5cf;
+      margin-top: 25px;
+      padding: 10px;
+      grid-column: 1;
+      font-size: 1.2em;
+      font-family: "Lato Light";
+    }
+
+    .buy-info {
+      display: block;
+      grid-column: 2;
+    }
+
+    .game-specific_info {
+      display: block;
+      background-color: #672a6b;
+      text-align: center;
+      border-top: #bac5cf solid 1px;
+      font-size: 1.2em;
+      font-family: "Lato Light";
+      padding: 5px;
+    }
+
+    .buy-cart-wish {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .buy-now {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .buy-now p {
+      margin: 0;
+    }
+
+    .add-cart {
+      text-align: center;
+      font-size: 2em;
+      width: 100%;
+    }
+
+    .add-wishlist {
+      flex: 1;
+      text-align: center;
+      font-size: 1em;
+      width: 100%;
+    }
+
+    .location-description_map {
+      flex-direction: row;
+    }
+
+    .location-description {
+      font-size: 1.4em;
+    }
+
+    .contact-us {
+      width: 1144px;
+    }
   }
 }
