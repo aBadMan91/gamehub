@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/b318972c4d.js"
       crossorigin="anonymous"
@@ -54,9 +55,92 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container">
+      <section>
+        <div class="payment-options">
+          <h1>
+            <label for="payment">Payment Options</label>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+          </h1>
+        </div>
+        <div class="payment-row">
+          <div class="col-large">
+            <div class="payment-container">
+              <form action="/checkout/checkoutsuccess.html" method="post">
+                <div class="payment-row">
+                  <div class="col-large_in">
+                    <h3>Your details</h3>
+                    <label for="email">Email To Redeem Code:</label>
+                    <input type="text" name="email" id="email" />
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="name" />
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" />
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" />
+                  </div>
+                  <div class="col-large_in">
+                    <h3>Payment details</h3>
+                    <label for="namecard">Name on Card:</label>
+                    <input type="text" name="nameoncard" id="namecard" />
+                    <label for="cardnumber">Credit Card Number:</label>
+                    <input type="text" name="cardnumber" id="cardnumber" />
+                    <label for="expmonth">Expiry Month:</label>
+                    <input type="text" name="expmonth" id="expmonth" />
+                    <div class="payment-row">
+                      <div class="col-large_in">
+                        <label for="expyear">Expiry Year:</label>
+                        <input type="text" name="expyear" id="expyear" />
+                      </div>
+                      <div class="col-large_in">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" name="cvv" id="cvv" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  value="Continue to checkout"
+                  class="button"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-small">
+            <div class="payment-container">
+              <h4>Cart Summary <span class="price">NOK</span></h4>
+              <hr />
+              <p>
+                <a href="../products/reddead2.html">Red Dead Redemption 2</a>
+                <span class="price">599,-</span>
+              </p>
+              <hr />
+              <p>Discount <span class="price">00,-</span></p>
+              <p>Total <span class="price">599,-</span></p>
+            </div>
+            <div>
+              <form action="../index.html">
+                <input type="button" value="Cancel" class="button-cancel" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <p>Follow us on</p>
+      <div class="social-icons">
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
       <p>Contact and Support:</p>
       <p>GameHub@GameHub.com</p>
     </footer>

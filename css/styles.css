@@ -84,6 +84,10 @@ footer {
   position: static;
 }
 
+.social-icons {
+  font-size: 1.5em;
+}
+
 header,
 footer {
   background: #672a6b;
@@ -427,6 +431,93 @@ td {
 }
 
 /* Checkout */
+* {
+  box-sizing: border-box;
+}
+
+.payment-options h1 {
+  background-color: #672a6b;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.payment-row {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 10px;
+}
+
+.col-large {
+  flex: 75%;
+}
+
+.col-large_in {
+  flex: 50%;
+}
+
+.col-small {
+  flex: 25%;
+  margin-bottom: 5px;
+}
+
+.col-large,
+.col-large_in,
+.col-small {
+  padding: 0 10px;
+}
+
+.payment-container {
+  background-color: #672a6b;
+  padding: 10px;
+  border: #bac5cf 1px solid;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #bac5cf;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.payment-icons {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: #4e8010;
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.button-cancel {
+  background-color: #af0000;
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+hr {
+  border: #bac5cf 1px solid;
+}
+
+.price {
+  float: right;
+}
 
 /* Checkout Success */
 

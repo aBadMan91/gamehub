@@ -149,6 +149,10 @@
     .contact-us {
       width: 800px;
     }
+
+    .payment-row {
+      flex-direction: row;
+    }
   }
 
   @media (min-width: 1144px) {
