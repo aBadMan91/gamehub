@@ -39,16 +39,17 @@
               </ul>
             </nav>
             <div class="searchbar">
-              <div class="search-input">
-                <input
-                  type="search"
-                  id="games"
-                  name="games"
-                  placeholder="Search"
-                />
-                <datalist id="games">
-                  <option value="Red Dead Redemption 2"></option>
-                </datalist>
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="search" placeholder="Search..." />
+            </div>
+            <div class="icons-container">
+              <div class="navbar-icons">
+                <a href="../wishlist/wishlist.html">
+                  <i class="fa-solid fa-heart"></i
+                ></a>
+                <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
               </div>
             </div>
           </div>
@@ -56,20 +57,24 @@
       </section>
     </header>
     <main class="container">
-      <section class="wishlist">
-        <h1>Wishlist</h1>
-      </section>
-      <section class="wishlist">
-        <h3>Your Wishlist</h3>
-      </section>
-      <section class="your-wishlist">
-        <ol>
-          <li>Red Dead Redemption 2</li>
-          <li>_</li>
-          <li>_</li>
-          <li>_</li>
-          <li>_</li>
-        </ol>
+      <section>
+        <div class="wishlist-page">
+          <h1>Wishlist</h1>
+        </div>
+        <div class="your-wishlist">
+          <h3>Your wishlist</h3>
+        </div>
+        <div class="your-wishlist_container">
+          <h4>Your wishlist is empty<span class="price">NOK</span></h4>
+          <hr />
+          <p>Add games to your wishlist</p>
+          <hr />
+        </div>
+        <div>
+          <form action="../index.html">
+            <button type="submit" class="back-home_button">Back to Home</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

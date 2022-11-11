@@ -214,6 +214,10 @@
       position: static;
     }
 
+    .searchbar input {
+      padding: 10px 30px;
+    }
+
     .product-list {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -315,6 +319,18 @@
 
     .thank-you {
       width: 1144px;
+    }
+
+    .wishlist-page {
+      width: 1144px;
+    }
+
+    .your-wishlist {
+      width: 1144px;
+    }
+
+    .your-wishlist_container {
+      width: 572px;
     }
   }
 }
