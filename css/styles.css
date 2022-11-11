@@ -1,5 +1,9 @@
 @import "imports/links.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
@@ -79,9 +83,7 @@ main {
 
 footer {
   grid-area: footer;
-  display: block;
   text-align: center;
-  position: static;
 }
 
 .social-icons {
@@ -431,10 +433,6 @@ td {
 }
 
 /* Checkout */
-* {
-  box-sizing: border-box;
-}
-
 .payment-options h1 {
   background-color: #672a6b;
   text-align: center;
@@ -489,7 +487,7 @@ label {
   font-size: 1.5em;
 }
 
-.button {
+.button-checkout {
   background-color: #4e8010;
   color: #fff;
   width: 100%;
@@ -509,6 +507,7 @@ label {
   padding: 10px;
   font-size: 1em;
   margin-top: 5px;
+  border: #bac5cf solid 1px;
 }
 
 hr {
@@ -520,6 +519,47 @@ hr {
 }
 
 /* Checkout Success */
+.thank-you {
+  background-color: #672a6b;
+  text-align: center;
+  width: 360px;
+  padding: 1px;
+}
+
+.order-success {
+  background-color: #672a6b;
+  text-align: center;
+  width: 360px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summary-container {
+  background-color: #672a6b;
+  padding: 10px;
+  border: #bac5cf 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.back-home_button {
+  display: block;
+  background-color: #672a6b;
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+  width: 50%;
+  margin: auto;
+  border: #bac5cf solid 1px;
+}
 
 /* Wishlist */
 .wishlist h1,

@@ -92,6 +92,22 @@
     width: 572px;
   }
 
+  .thank-you {
+    width: 600px;
+  }
+
+  .order-success {
+    width: 50%;
+  }
+
+  .summary-container {
+    width: 50%;
+  }
+
+  .back-home_button {
+    width: 25%;
+  }
+
   @media (min-width: 800px) {
     .container {
       max-width: 800px;
@@ -153,12 +169,24 @@
     .payment-row {
       flex-direction: row;
     }
+
+    .thank-you {
+      width: 800px;
+    }
   }
 
   @media (min-width: 1144px) {
     .container {
       max-width: 1144px;
       margin: auto;
+    }
+
+    header {
+      font-size: 1.5em;
+    }
+
+    footer {
+      font-size: 1.2em;
     }
 
     .header-nav_row {
@@ -282,6 +310,10 @@
     }
 
     .contact-us {
+      width: 1144px;
+    }
+
+    .thank-you {
       width: 1144px;
     }
   }
