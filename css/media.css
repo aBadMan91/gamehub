@@ -1,9 +1,4 @@
 @media (min-width: 360px) {
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
 }
 
 @media (min-width: 600px) {
@@ -15,18 +10,9 @@
     display: none;
   }
 
-  .header-nav-row_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .logo-list-search {
     max-width: 600px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   nav {
@@ -34,8 +20,27 @@
     position: static;
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
   .highlighted-game {
-    background-color: #672a6b;
     padding-bottom: 50px;
   }
 
@@ -53,10 +58,18 @@
     margin: 10px;
   }
 
+  .categories li {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
   .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+
+  .product-list h3,
+  .product-list p {
+    font-size: 1em;
   }
 
   .bestsellers {
@@ -78,10 +91,7 @@
   }
 
   .game-price {
-    text-align: center;
     font-size: 2.5em;
-    margin: 25px 0px;
-    border: #bac5cf solid 1px;
   }
 
   .contact-us {
@@ -97,15 +107,19 @@
   }
 
   .order-success {
-    width: 50%;
+    width: 75%;
   }
 
   .summary-container {
-    width: 50%;
+    width: 75%;
   }
 
   .back-home_button {
     width: 25%;
+  }
+
+  .wishlist-page {
+    width: 600px;
   }
 
   @media (min-width: 800px) {
@@ -113,42 +127,20 @@
       max-width: 800px;
     }
 
-    header label {
-      display: none;
-    }
-
-    .header-nav_row {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header-nav-row_div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     .logo-list-search {
       max-width: 800px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
     .logo img {
       width: 208px;
     }
 
-    nav {
-      display: block;
-      position: static;
+    .categories li {
+      padding: 15px;
+      font-size: 1em;
     }
 
     .product-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 60px;
     }
 
@@ -173,6 +165,14 @@
     .thank-you {
       width: 800px;
     }
+
+    .back-home_button {
+      width: 25%;
+    }
+
+    .wishlist-page {
+      width: 800px;
+    }
   }
 
   @media (min-width: 1144px) {
@@ -189,33 +189,17 @@
       font-size: 1.2em;
     }
 
-    .header-nav_row {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header-nav-row_div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     .logo-list-search {
       max-width: 1144px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav {
-      display: block;
-      position: static;
     }
 
     .searchbar input {
       padding: 10px 30px;
+    }
+
+    .categories li {
+      padding: 20px;
+      font-size: 1em;
     }
 
     .product-list {
@@ -236,7 +220,6 @@
 
     .wishlist {
       width: 572px;
-      float: right;
     }
 
     .game-specific_details {
@@ -253,14 +236,9 @@
     }
 
     .game-specific_description {
-      display: block;
-      background-color: #672a6b;
-      border-color: #bac5cf;
       margin-top: 25px;
       padding: 10px;
-      grid-column: 1;
       font-size: 1.2em;
-      font-family: "Lato Light";
     }
 
     .buy-info {
@@ -270,21 +248,15 @@
 
     .game-specific_info {
       display: block;
-      background-color: #672a6b;
-      text-align: center;
-      border-top: #bac5cf solid 1px;
       font-size: 1.2em;
-      font-family: "Lato Light";
       padding: 5px;
     }
 
     .buy-cart-wish {
-      display: flex;
       flex-direction: column;
     }
 
     .buy-now {
-      text-align: center;
       font-size: 2em;
     }
 
@@ -293,14 +265,12 @@
     }
 
     .add-cart {
-      text-align: center;
       font-size: 2em;
       width: 100%;
     }
 
     .add-wishlist {
       flex: 1;
-      text-align: center;
       font-size: 1em;
       width: 100%;
     }
@@ -323,14 +293,6 @@
 
     .wishlist-page {
       width: 1144px;
-    }
-
-    .your-wishlist {
-      width: 1144px;
-    }
-
-    .your-wishlist_container {
-      width: 572px;
     }
   }
 }

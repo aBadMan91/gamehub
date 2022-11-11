@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-  max-width: 360px;
   margin: auto;
 }
 
@@ -162,6 +161,26 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
 /* Index */
 .highlighted h1 {
   background-color: #672a6b;
@@ -196,7 +215,8 @@ img {
 
 .categories li {
   display: inline-block;
-  padding: 25px;
+  padding: 5px;
+  font-size: 0.9em;
 }
 
 .featured-new {
@@ -219,12 +239,15 @@ img {
 
 .product-list {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .product-list h3,
 .product-list p {
   display: inline;
   vertical-align: text-top;
+  font-size: 0.9em;
 }
 
 .bestseller-wishlist_list {
@@ -280,7 +303,6 @@ td {
 .location-description {
   flex: 1;
   background-color: #672a6b;
-  font-size: 1em;
   padding: 5px;
 }
 
@@ -338,8 +360,7 @@ td {
 .game-specific_name {
   background-color: #672a6b;
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: -50px;
+  margin-bottom: -25px;
 }
 
 .game-specific_name h1 {
@@ -354,11 +375,9 @@ td {
 .game-specific_description {
   display: block;
   background-color: #672a6b;
-  border-color: #bac5cf;
   margin-top: 25px;
   padding: 10px;
   grid-column: 1;
-  font-size: 1.2em;
   font-family: "Lato Light";
 }
 
@@ -372,16 +391,15 @@ td {
   background-color: #672a6b;
   text-align: center;
   border-top: #bac5cf solid 1px;
-  font-size: 0.8em;
   font-family: "Lato Light";
   padding: 0.5em;
+  font-size: 0.8em;
 }
 
 .game-price {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 1.5em;
   margin: 25px 0px;
   border: #bac5cf solid 1px;
 }
@@ -399,7 +417,6 @@ td {
   background-color: #4e8010;
   text-align: center;
   border: #bac5cf solid 1px;
-  font-size: 1.3em;
 }
 
 .add-cart {
@@ -407,7 +424,6 @@ td {
   background-color: #672a6b;
   text-align: center;
   border: #bac5cf solid 1px;
-  font-size: 1.3em;
 }
 
 .add-wishlist {
@@ -415,7 +431,6 @@ td {
   background-color: #672a6b;
   text-align: center;
   border: #bac5cf solid 1px;
-  font-size: 1.3em;
 }
 
 .game_system-req {
@@ -600,7 +615,7 @@ hr {
 .your-wishlist {
   background-color: #672a6b;
   text-align: center;
-  width: 360px;
+  width: 50%;
   margin-top: 50px;
   margin-bottom: 5px;
   padding: 1px;
@@ -614,7 +629,7 @@ hr {
   border: #bac5cf 1px solid;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 50%;
   margin-bottom: 20px;
 }
 
