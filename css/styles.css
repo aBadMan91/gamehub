@@ -479,7 +479,16 @@ td {
 .payment-options h1 {
   background-color: #672a6b;
   text-align: center;
-  padding-top: 5px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.payment-icons {
+  background-color: #672a6b;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 2em;
+  text-align: center;
 }
 
 .payment-row {
@@ -522,12 +531,6 @@ input[type="text"] {
 
 label {
   margin-bottom: 10px;
-}
-
-.payment-icons {
-  margin-bottom: 10px;
-  padding: 8px;
-  font-size: 1.5em;
 }
 
 .button-checkout {
