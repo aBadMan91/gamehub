@@ -4,6 +4,7 @@
 @media (min-width: 600px) {
   .container {
     max-width: 600px;
+    padding-top: 6em;
   }
 
   header label {
@@ -125,6 +126,7 @@
   @media (min-width: 800px) {
     .container {
       max-width: 800px;
+      padding-top: 8em;
     }
 
     .logo-list-search {
