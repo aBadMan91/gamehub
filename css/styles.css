@@ -210,6 +210,7 @@ p {
 
 .categories {
   background-color: #672a6b;
+  margin-top: 2em;
 }
 
 .categories ul {
@@ -225,6 +226,7 @@ p {
 
 .featured-new {
   background-color: #27282e;
+  margin-top: 2em;
 }
 
 .featured-new h2 {
@@ -234,6 +236,7 @@ p {
 
 .featured-popular {
   background-color: #27282e;
+  margin-top: 2em;
 }
 
 .featured-popular h2 {
@@ -361,6 +364,10 @@ td {
   margin: auto;
 }
 
+.game-image_thumbnails img:hover {
+  box-shadow: 0 0 2px 1px rgba(103, 42, 107);
+}
+
 .game-specific_name {
   background-color: #672a6b;
   text-align: center;
@@ -374,6 +381,11 @@ td {
 .game-specific_details {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .game-specific_description {
@@ -437,41 +449,38 @@ td {
   border: #bac5cf solid 1px;
 }
 
-.game_system-req {
+.system-req {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1em;
+}
+
+.system-req h3 {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0;
+  border: #bac5cf solid 1px;
   background-color: #672a6b;
 }
 
-.game_system-req h2 {
-  text-align: center;
-  padding: 0.4em;
-}
-
-.game_system-req table {
-  border: 1px solid;
-  border-collapse: collapse;
-  margin: auto;
-  width: 100%;
-  font-family: "Lato Light";
-}
-
-.game_system-req tbody {
-  border: 1px solid;
-}
-
-.game_system-req tbody p {
-  text-align: left;
-  padding-right: 0.4em;
-}
-
-.game_system-req th,
-.game_system-req td {
-  padding: 0.4em;
+.system-req_left {
   border: #bac5cf solid 1px;
+  font-family: "Lato Light";
+  background-color: #672a6b;
+  padding-left: 0.4em;
 }
 
-.supported-languages p {
+.system-req_right {
+  border: #bac5cf solid 1px;
+  font-family: "Lato Light";
+  background-color: #672a6b;
+  padding-left: 0.4em;
+}
+
+.supported-languages {
   font-family: "Lato Light";
   padding: 0.4em;
+  background-color: #672a6b;
 }
 
 .extra-info {
