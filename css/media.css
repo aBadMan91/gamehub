@@ -123,6 +123,10 @@
     width: 600px;
   }
 
+  .cart-page {
+    width: 600px;
+  }
+
   @media (min-width: 800px) {
     .container {
       max-width: 800px;
@@ -173,6 +177,10 @@
     }
 
     .wishlist-page {
+      width: 800px;
+    }
+
+    .cart-page {
       width: 800px;
     }
   }
@@ -294,6 +302,10 @@
     }
 
     .wishlist-page {
+      width: 1144px;
+    }
+
+    .cart-page {
       width: 1144px;
     }
   }

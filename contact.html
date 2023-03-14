@@ -60,14 +60,14 @@
               <button type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-              <input type="search" placeholder="Search..." />
+              <input type="search" placeholder="Search" />
             </div>
             <div class="icons-container">
               <div class="navbar-icons">
                 <a href="/wishlist/wishlist.html" title="Wishlist">
                   <i class="fa-solid fa-heart"></i
                 ></a>
-                <a href="/checkout/checkout.html" title="Cart">
+                <a href="../cart/cart.html" title="Cart">
                   <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -79,27 +79,68 @@
     <main class="container">
       <section class="contact-us">
         <h1>Contact Us</h1>
-        <div class="contact-details">
-          <div>
-            <h3>
-              If you have any questions or need support send us an email or call
-              us.
-            </h3>
-          </div>
-          <div>
-            <p>Support Email: GameHub@GameHub.com</p>
-            <p>Phone: +47 555 55 555</p>
-          </div>
-          <div>
-            <h3>You can also follow and contact us on</h3>
-          </div>
-          <div>
-            <p>www.Twitter.com/GameHub</p>
-            <p>www.Facebook.com/GameHub</p>
-            <p>www.Instagram.com/GameHub</p>
-            <p>www.Discord.com/Servers/GameHub</p>
-            <p>www.YouTube.com/GameHub</p>
-          </div>
+        <div id="contactMessage">
+          Thank you for the message, we will reply as fast as we can.
+        </div>
+        <div class="concact-form_parent">
+          <form id="contactForm">
+            <div>
+              <h3>
+                If you have any questions or need support send us an email.
+              </h3>
+            </div>
+            <div>
+              <p>* Required</p>
+            </div>
+            <div>
+              <label
+                ><p>Name: *</p>
+                <input
+                  name="name"
+                  id="name"
+                  type="textContact"
+                  placeholder="Enter your name here..."
+              /></label>
+              <div class="form-error" id="nameError">Enter your name</div>
+            </div>
+            <div>
+              <label>
+                <p>Email: *</p>
+                <input
+                  type="textContact"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email here..."
+                />
+              </label>
+              <div class="form-error" id="emailError">
+                You must enter a valid email address
+              </div>
+            </div>
+            <div>
+              <label for="subject"
+                ><p>Subject (minimum 10 characters): *</p>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write your message here..."
+                  class="contact-textarea"
+                ></textarea>
+              </label>
+              <div class="form-error" id="subjectError">
+                You must enter 10 characters or more
+              </div>
+            </div>
+            <button class="form-button">Send Message</button>
+          </form>
+        </div>
+        <div>
+          <button
+            onclick="window.location.href='index.html'"
+            class="contact-back_home"
+          >
+            Back to Home
+          </button>
         </div>
       </section>
     </main>
@@ -125,5 +166,6 @@
       <p>Contact and Support:</p>
       <p>GameHub@GameHub.com</p>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
