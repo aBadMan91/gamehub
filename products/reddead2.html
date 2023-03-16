@@ -77,30 +77,45 @@
       </section>
     </header>
     <main class="container">
-      <section class="main-game_picture">
-        <div>
+      <section class="gameImageContainer">
+        <div class="topImageSlides fade">
           <img
-            src="../images/RedDead2_1.jpg"
-            alt="Trees surrounding a road leading to a mansion"
+            src="../images/RedDead2_2.jpg"
+            alt="Arthur Morgan by his campsite bed"
           />
         </div>
-        <div class="game-image_thumbnails">
-          <div>
-            <a href="../images/RedDead2_2.jpg" target="_blank">
+        <div class="topImageSlides fade">
+          <img src="../images/RedDead2_3.jpg" alt="A dock by a lake" />
+        </div>
+        <div class="topImageSlides fade">
+          <img src="../images/RedDead2_4.jpg" alt="A campsite" />
+        </div>
+        <a class="slidesPrevious" onclick="plusSlides(-1)"><</a>
+        <a class="slidesNext" onclick="plusSlides(1)">></a>
+        <div class="gameImageThumbnailsRow">
+          <div class="gameImageThumbnailsColumn">
             <img
+              class="gameThumbnail"
               src="../images/RedDead2_2.jpg"
               alt="Arthur Morgan by his campsite bed"
-            /></a>
+              onclick="currentSlide(1)"
+            />
           </div>
-          <div>
-            <a href="../images/RedDead2_3.jpg" target="_blank">
-            <img src="../images/RedDead2_3.jpg" alt="A dock by a lake" />
-          </a>
+          <div class="gameImageThumbnailsColumn">
+            <img
+              class="gameThumbnail"
+              src="../images/RedDead2_3.jpg"
+              alt="A dock by a lake"
+              onclick="currentSlide(2)"
+            />
           </div>
-          <div>
-            <a href="../images/RedDead2_4.jpg" target="_blank">
-            <img src="../images/RedDead2_4.jpg" alt="A campsite" />
-          </a>
+          <div class="gameImageThumbnailsColumn">
+            <img
+              class="gameThumbnail"
+              src="../images/RedDead2_4.jpg"
+              alt="A campsite"
+              onclick="currentSlide(3)"
+            />
           </div>
         </div>
       </section>
@@ -216,6 +231,7 @@
           <p>Direct X Compatible</p>
         </div>
       </section>
+      <section>
         <div class="supported-languages">
           <p>Supported Languages:</p>
           <p>
@@ -281,5 +297,6 @@
       <p>Contact and Support:</p>
       <p>GameHub@GameHub.com</p>
     </footer>
+    <script src="/js/product.js"></script>
   </body>
 </html>
