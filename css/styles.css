@@ -271,42 +271,38 @@ p {
 }
 
 .bestseller-wishlist_list {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  background-color: #672a6b;
+}
+
+.bestseller-wishlist_list h4 {
+  padding-left: 1rem;
 }
 
 .bestsellers {
   background-color: #672a6b;
-  text-align: left;
-  width: 360px;
-  object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border: #bac5cf solid 1px;
+  flex: 50%;
+}
+
+.bestsellers h4 {
+  border-bottom: #bac5cf solid 1px;
+  margin: 0;
 }
 
 .wishlist {
   background-color: #672a6b;
-  text-align: left;
-  width: 360px;
-  object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border: #bac5cf solid 1px;
+  flex: 50%;
 }
 
-table {
-  border: 1px solid;
-  border-collapse: collapse;
-  margin: auto;
-}
-
-tbody {
-  border: 1px solid;
-  line-height: 3em;
-}
-
-th {
-  padding: 10px;
-}
-
-td {
-  padding-left: 10px;
+.wishlist h4 {
+  border-bottom: #bac5cf solid 1px;
+  margin: 0;
 }
 
 /* About */
@@ -614,6 +610,7 @@ label {
   font-family: "Lato Light";
   background-color: #672a6b;
   padding-left: 0.4em;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .system-req_right {
@@ -621,6 +618,7 @@ label {
   font-family: "Lato Light";
   background-color: #672a6b;
   padding-left: 0.4em;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .supported-languages {
@@ -732,6 +730,8 @@ hr {
 
 .price {
   float: right;
+  padding-right: 1rem;
+  font-size: 0.8rem;
 }
 
 /* Checkout Success */

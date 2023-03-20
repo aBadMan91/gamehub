@@ -73,15 +73,6 @@
     font-size: 1em;
   }
 
-  .bestsellers {
-    width: 300px;
-    float: left;
-  }
-
-  .wishlist {
-    width: 300px;
-  }
-
   .game-specific_name {
     font-size: 2.5em;
     margin-bottom: -50px;
@@ -127,6 +118,10 @@
     width: 600px;
   }
 
+  .price {
+    font-size: 1rem;
+  }
+
   @media (min-width: 800px) {
     .container {
       max-width: 800px;
@@ -150,14 +145,9 @@
       gap: 60px;
     }
 
-    .bestsellers {
-      width: 400px;
-      float: left;
-    }
-
-    .wishlist {
-      width: 400px;
-      float: right;
+    .bestseller-wishlist_list {
+      flex-direction: row;
+      line-height: 2rem;
     }
 
     .contact-us {
@@ -221,15 +211,6 @@
     .product-list img {
       width: 220px;
       height: 220px;
-    }
-
-    .bestsellers {
-      width: 572px;
-      float: left;
-    }
-
-    .wishlist {
-      width: 572px;
     }
 
     .game-specific_details {
