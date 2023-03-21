@@ -592,12 +592,22 @@ label {
 }
 
 .system-req {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   line-height: 1em;
 }
 
-.system-req h3 {
+.system-req h2 {
+  background-color: #672a6b;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.req-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.req-info h3 {
   text-align: center;
   padding: 1em;
   margin-bottom: 0;
