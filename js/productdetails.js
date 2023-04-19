@@ -2,8 +2,6 @@ const detailContainer = document.querySelector(".container");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
-console.log(queryString);
-
 const id = params.get("id");
 const name = params.get("name");
 
@@ -28,6 +26,8 @@ async function getProduct() {
         detailContainer.innerHTML = alert("error", error);
     }
 }
+
+document.title = "GameHub" + " " + "|" + " " + name;
 
 getProduct();
 

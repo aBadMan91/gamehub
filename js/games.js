@@ -1,8 +1,10 @@
-const url ="https://gamehub.local/wp-json/wc/store/products";
+const baseUrl ="https://gamehub.local/wp-json/wc/store/products";
 
 const productContainer = document.querySelector(".product-list");
+const categories = document.querySelectorAll(".categories")
 
-async function getProducts() {
+
+async function getProducts(url) {
     try {
         const response = await fetch(url);
         const getResults = await response.json();
@@ -17,7 +19,7 @@ async function getProducts() {
     }
 }
 
-getProducts();
+getProducts(baseUrl);
 
 function createHTML(products) {
     products.forEach(function(product) {
@@ -25,9 +27,24 @@ function createHTML(products) {
         <div class="products">
             <a href="products/productdetails.html?id=${product.id}&name=${product.name}">
                 <img src="${product.images[0].src}" alt="${product.name}" class="gameImageThumbnailsColumn">
-                <h3>${product.name}</h3>
+                <h3>${product.sku}</h3>
                 <p>${product.prices.price} NOK</p>
             </a>
         </div>`;
     });
 }
+
+categories.forEach(function(category) {
+    category.onclick = function(event) {
+        let newUrl;
+        if(event.target.id === "featured"){
+            newUrl = baseUrl + "?featured=true";
+        }
+        else {
+            const chosenCategory = event.target.value;
+            newUrl = baseUrl + `?category=${chosenCategory}`
+        }
+        productContainer.innerHTML = "";
+        getProducts(newUrl);
+    }
+})

@@ -218,21 +218,25 @@ p {
   max-height: 460px;
 }
 
-.categories {
+.categories-container {
   background-color: #672a6b;
-  margin-top: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.categories ul {
-  list-style: none;
-  text-align: center;
-}
-
-.categories li {
-  display: inline-block;
+.categories {
+  display: flex;
+  justify-content: center;
   padding: 5px;
   font-size: 0.9em;
+}
+
+.categories-container h2 {
+  padding: 3px 10px;
+  margin-bottom: 0;
+}
+
+.categories label {
+  padding: 10px;
 }
 
 .featured-new {
@@ -246,12 +250,12 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.featured-popular {
+.games {
   background-color: #27282e;
   margin-top: 2em;
 }
 
-.featured-popular h2 {
+.games h2 {
   padding: 3px 10px;
   background-color: #672a6b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
