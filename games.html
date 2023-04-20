@@ -24,7 +24,7 @@
     <header class="header-nav">
       <section class="header-nav_row">
         <div class="header-nav-row_div">
-          <div class="logo-list-search">
+          <div class="logo-list">
             <div class="logo">
               <a href="index.html"
                 ><img src="images/GameHubLogo.svg" alt="GameHub Logo"
@@ -42,12 +42,6 @@
                 <li><a href="games.html" class="active">Games</a></li>
               </ul>
             </nav>
-            <div class="searchbar">
-              <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <input type="search" placeholder="Search" />
-            </div>
             <div class="icons-container">
               <div class="navbar-icons">
                 <a href="/wishlist/wishlist.html" aria-label="Go to Wishlist">
@@ -170,6 +164,12 @@
       </section>
       <section class="games">
         <h2>Games</h2>
+        <div class="searchbar">
+          <button type="submit" class="search-button" id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="search" placeholder="Search" id="search-input" />
+        </div>
         <div class="product-list"></div>
       </section>
     </main>

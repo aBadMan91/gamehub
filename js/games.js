@@ -2,9 +2,10 @@ const baseUrl ="https://gamehub.local/wp-json/wc/store/products";
 
 const productContainer = document.querySelector(".product-list");
 const categories = document.querySelectorAll(".categories")
-
+const searchButton = document.querySelector(".search-button");
 
 async function getProducts(url) {
+    
     try {
         const response = await fetch(url);
         const getResults = await response.json();
@@ -48,3 +49,12 @@ categories.forEach(function(category) {
         getProducts(newUrl);
     }
 })
+
+searchButton.onclick = function() {
+
+    const searchInput = document.querySelector ("#search-input").value;
+    const newUrl = baseUrl + `?search=${searchInput}`;
+
+    productContainer.innerHTML = "";
+    getProducts(newUrl);
+}

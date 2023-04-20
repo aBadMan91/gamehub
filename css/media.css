@@ -11,7 +11,7 @@
     display: none;
   }
 
-  .logo-list-search {
+  .logo-list {
     max-width: 600px;
     width: 100%;
   }
@@ -57,11 +57,6 @@
     float: right;
     text-align: right;
     margin: 10px;
-  }
-
-  .categories li {
-    padding: 5px;
-    font-size: 0.9em;
   }
 
   .product-list {
@@ -132,17 +127,12 @@
       padding-top: 8em;
     }
 
-    .logo-list-search {
+    .logo-list {
       max-width: 800px;
     }
 
     .logo img {
       width: 208px;
-    }
-
-    .categories li {
-      padding: 15px;
-      font-size: 1em;
     }
 
     .product-list {
@@ -193,17 +183,12 @@
       font-size: 1.2em;
     }
 
-    .logo-list-search {
+    .logo-list {
       max-width: 1144px;
     }
 
     .searchbar input {
       padding: 10px 30px;
-    }
-
-    .categories li {
-      padding: 20px;
-      font-size: 1em;
     }
 
     .product-list {
