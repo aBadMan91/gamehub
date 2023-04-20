@@ -57,31 +57,6 @@ body {
   width: 104px;
 }
 
-.searchbar {
-  display: flex;
-  background: #fff;
-  position: relative;
-  width: 150px;
-  margin-bottom: 1em;
-}
-
-.searchbar input {
-  display: block;
-  padding: 10px 25px;
-  width: 150px;
-}
-
-.searchbar button {
-  background: transparent;
-  border: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
 .icons-container {
   display: flex;
   flex-direction: column;
@@ -222,22 +197,43 @@ p {
 .categories-container {
   background-color: #672a6b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: fit-content;
 }
 
 .categories {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 5px;
-  font-size: 0.9em;
 }
 
-.categories-container h2 {
-  padding: 3px 10px;
-  margin-bottom: 0;
+.searchbar {
+  display: flex;
+  background: #fff;
+  position: relative;
+  width: 150px;
+  margin: 1em;
 }
 
-.categories label {
-  padding: 10px;
+.searchbar input {
+  display: block;
+  padding: 10px 25px;
+  width: 150px;
+}
+
+.searchbar button {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.selection {
+  margin: 1em;
 }
 
 .featured-new {

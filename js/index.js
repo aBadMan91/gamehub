@@ -9,8 +9,6 @@ async function getProducts(url) {
         const response = await fetch(url);
         const getResults = await response.json();
 
-        console.log(getResults);
-
         createHTML(getResults);
     }
 

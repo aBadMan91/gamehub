@@ -7,16 +7,12 @@ const name = params.get("name");
 
 const url ="https://gamehub.local/wp-json/wc/store/products/" + id;
 
-// const url ="https://gamehub.local/wp-json/wc/v3/products/" + id + "?consumer_key=ck_d3f0c8529adfc4adf21fd89bef23a960a3eda2c2&consumer_secret=cs_1262e9396b21e788f1b0102168c2e36c74ceb68e";
-
 async function getProduct() {
 
     try {
         const response = await fetch(url);
 
         const product = await response.json();
-
-        console.log(product);
 
         createHtml(product);
     }

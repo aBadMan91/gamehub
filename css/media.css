@@ -121,6 +121,19 @@
     font-size: 1rem;
   }
 
+  .categories-container {
+    width: 100%;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .selection {
+    max-width: 25%;
+  }
+
   @media (min-width: 800px) {
     .container {
       max-width: 800px;

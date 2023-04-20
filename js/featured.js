@@ -7,8 +7,6 @@ async function getFeaturedProducts() {
         const response = await fetch(featuredURL);
         const getResults = await response.json();
 
-        console.log(getResults);
-
         createHTML(getResults);
     }
 

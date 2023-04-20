@@ -1,16 +1,14 @@
 const baseUrl ="https://gamehub.local/wp-json/wc/store/products";
 
 const productContainer = document.querySelector(".product-list");
-const categories = document.querySelectorAll(".categories")
 const searchButton = document.querySelector(".search-button");
+const categorySelection = document.querySelector(".selection")
 
 async function getProducts(url) {
     
     try {
         const response = await fetch(url);
         const getResults = await response.json();
-
-        console.log(getResults);
 
         createHTML(getResults);
     }
@@ -35,20 +33,19 @@ function createHTML(products) {
     });
 }
 
-categories.forEach(function(category) {
-    category.onclick = function(event) {
-        let newUrl;
-        if(event.target.id === "featured"){
-            newUrl = baseUrl + "?featured=true";
-        }
-        else {
-            const chosenCategory = event.target.value;
-            newUrl = baseUrl + `?category=${chosenCategory}`
-        }
-        productContainer.innerHTML = "";
-        getProducts(newUrl);
+categorySelection.onchange = function(event) {
+    let newUrl;
+    if(event.target.value === "featured"){
+        newUrl = baseUrl + "?featured=true";
     }
-})
+    else {
+        const chosenCategory = event.target.value;
+        newUrl = baseUrl + `?category=${chosenCategory}`
+    }
+    productContainer.innerHTML = "";
+    getProducts(newUrl);
+    document.getElementById("search-input").value = "";
+}
 
 searchButton.onclick = function() {
 
@@ -57,4 +54,5 @@ searchButton.onclick = function() {
 
     productContainer.innerHTML = "";
     getProducts(newUrl);
+    document.getElementById("selection").selectedIndex = 0;
 }
