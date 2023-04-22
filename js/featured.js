@@ -1,4 +1,4 @@
-const featuredURL = "https://gamehub.local/wp-json/wc/store/products?featured=true";
+const featuredURL = "https://gamehub-aleks.local/wp-json/wc/store/products?featured=true";
 
 const featuredContainer = document.querySelector(".highlighted");
 

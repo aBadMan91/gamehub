@@ -1,4 +1,4 @@
-const baseUrl ="https://gamehub.local/wp-json/wc/store/products";
+const baseUrl ="https://gamehub-aleks.local/wp-json/wc/store/products";
 
 const productContainer = document.querySelector(".product-list");
 const searchButton = document.querySelector(".search-button");

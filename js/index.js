@@ -1,6 +1,6 @@
-const baseUrl ="https://gamehub.local/wp-json/wc/store/products";
+const baseUrl ="https://gamehub-aleks.local/wp-json/wc/store/products";
 
-const perPageUrl ="https://gamehub.local/wp-json/wc/store/products?per_page=8";
+const perPageUrl ="https://gamehub-aleks.local/wp-json/wc/store/products?per_page=8";
 
 const productContainer = document.querySelector(".product-list");
 

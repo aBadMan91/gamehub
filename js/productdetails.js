@@ -5,7 +5,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const name = params.get("name");
 
-const url ="https://gamehub.local/wp-json/wc/store/products/" + id;
+const url ="https://gamehub-aleks.local/wp-json/wc/store/products/" + id;
 
 async function getProduct() {
 
