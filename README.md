@@ -1,7 +1,5 @@
-# GameHub - CA - HTML and CSS
+# GameHub - CA - Content Management System
 
 ## My website for the course assignment
 
-Link to website
-
-https://tubular-choux-daa105.netlify.app/
+This version is not deployed on Netlify, only local.
