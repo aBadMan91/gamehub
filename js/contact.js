@@ -32,9 +32,18 @@ function validateContactForm(event) {
         subjectError.style.display = "block";
     }
 
-    contactMessage.classList.add('show');
+    if (
+        checkLength(name.value, 1) === true,
+        validateEmail(email.value) === true,
+        checkLength(subject.value, 10) === true
+    ) {
+        contactMessage.classList.add('show');
+        contactForm.reset();
 
-    contactForm.reset();
+        setTimeout(function(){
+            window.location.reload();
+         }, 5000);
+    }
 }
 
 contactForm.addEventListener("submit", validateContactForm);
