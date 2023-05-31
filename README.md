@@ -1,6 +1,6 @@
 # GameHub - Year One Project - Noroff
 
-![image](https://raw.githubusercontent.com/aBadMan91/fuzzy-octo-system/main/images/GameHubHomeScreenshotReadme.png)
+![image](https://raw.githubusercontent.com/aBadMan91/fuzzy-octo-system/main/images/GameHubHomeScreenshotReadme.jpg)
 
 The first project I worked on at Noroff.
 
