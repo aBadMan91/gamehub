@@ -1,6 +1,6 @@
 # GameHub - Year One Project - Noroff
 
-![image](https://raw.githubusercontent.com/aBadMan91/fuzzy-octo-system/main/images/GameHubHomeScreenshotReadme.jpg)
+![image](https://raw.githubusercontent.com/aBadMan91/gamehub/main/images/GameHubHomeScreenshotReadme.jpg)
 
 The first project I worked on at Noroff.
 
@@ -25,7 +25,7 @@ The static version (main) is the one that is linked here, and the API call versi
 
 Link to my GameHub website.
 
-- [GameHub](https://tubular-choux-daa105.netlify.app/)
+- [GameHub](https://gamehub-aleksnord.netlify.app/)
 
 ## Built With
 
@@ -40,7 +40,7 @@ Link to my GameHub website.
 - Clone the repo:
 
 ```bash
-git clone https://github.com/aBadMan91/fuzzy-octo-system.git
+git clone https://github.com/aBadMan91/gamehub.git
 ```
 
 ## Contributing
