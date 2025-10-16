@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Card({ image, title, price }) {
+export default function ProductCard({ image, title, price }) {
   return (
     <div className=" rounded-lg shadow-md overflow-hidden max-w-sm" style={{ backgroundColor: "var(--color-primary)" }}>
       {image && <img src={image} alt={title} className="w-full h-48 object-cover" />}
